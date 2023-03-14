@@ -1,16 +1,14 @@
-import './App.css';
+import React from 'react';
+import MovieSearch from './components/MovieSearch';
 
 function App() {
   return (
-    <header>
-      <h1>hello, verden!</h1>
-    </header>
-
-    <main>
-
-
-    </main>
+    <div>
+      <h1>Movie Search</h1>
+      <MovieSearch />
+    </div>
   );
 }
 
 export default App;
+
