@@ -4,7 +4,7 @@ function MovieList(props) {
   const { movies } = props;
 
   return (
-    <ul>
+    <ul className='PosterCard'>
       {movies.map(movie => (
         <li key={movie.imdbID}>
           <img src={movie.Poster} alt={movie.Title} />
