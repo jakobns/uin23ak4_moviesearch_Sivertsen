@@ -4,7 +4,7 @@ function MovieList(props) {
   const { movies } = props;
 
   return (
-    <div className='PosterCard'>
+    <section className='PosterCard'>
       {movies.map(movie => (
         <article key={movie.imdbID}>
           <img src={movie.Poster} alt={movie.Title} />
@@ -15,7 +15,7 @@ function MovieList(props) {
           </div>
         </article>
       ))}
-    </div>
+    </section>
   );
 }
 

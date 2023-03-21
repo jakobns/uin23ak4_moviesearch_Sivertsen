@@ -4,6 +4,7 @@ import MovieList from './MovieList.js';
 function MovieSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [movies, setMovies] = useState([]);
+  
 
   const handleChange = event => {
     setSearchTerm(event.target.value);
@@ -24,7 +25,10 @@ function MovieSearch() {
         console.error(error);
         setMovies([]);
       });
+
+    
   };
+
 
   return (
     <div>
