@@ -29,7 +29,7 @@ function MovieSearch() {
   return (
     <div>
       <form className='SearchBar' onSubmit={handleSubmit}>
-        <input type="text" value={searchTerm} onChange={handleChange} />
+        <input type="text" placeholder='Search...' value={searchTerm} onChange={handleChange} />
         <button type="submit">Search</button>
       </form>
       {movies.length > 0 ? (

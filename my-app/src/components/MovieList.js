@@ -4,18 +4,18 @@ function MovieList(props) {
   const { movies } = props;
 
   return (
-    <ul className='PosterCard'>
+    <div className='PosterCard'>
       {movies.map(movie => (
-        <li key={movie.imdbID}>
+        <article key={movie.imdbID}>
           <img src={movie.Poster} alt={movie.Title} />
           <div>
             <h3>{movie.Title}</h3>
-            <p>Year: {movie.Year}</p>
-            <p>Type: {movie.Type}</p>
+            <p className='CardYear'>Year: {movie.Year}</p>
+            <p className='CardType'>Type: {movie.Type}</p>
           </div>
-        </li>
+        </article>
       ))}
-    </ul>
+    </div>
   );
 }
 

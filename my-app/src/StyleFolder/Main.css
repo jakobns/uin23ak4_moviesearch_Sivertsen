@@ -8,21 +8,63 @@ header h1 {
   font-family: sans-serif;
 }
 
+body {
+  background-color: #000000;
+}
+
 form {
   margin: auto;
-  width: 60%;
+  width: 99%;
   padding: 10px;
   justify-content: center;
 }
-form .SearchBar {
-  margin: auto;
+form input {
+  padding: 1rem;
+  margin-left: 350px;
+  width: 1000px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+form button {
+  padding: 1rem;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  background-color: #c0c0c0;
 }
 
-.PosterCard li {
-  border: solid 3px;
-  width: 50%;
+.PosterCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  background-color: #000000;
+}
+
+article {
+  color: #fff;
+  background-color: #222;
+  border: solid 3px #222;
+  width: -moz-fit-content;
+  width: fit-content;
   justify-content: center;
   list-style: none;
   text-align: center;
   margin: auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  height: 550px;
+}
+article img {
+  width: 300px;
+  height: 400px;
 }/*# sourceMappingURL=Main.css.map */
