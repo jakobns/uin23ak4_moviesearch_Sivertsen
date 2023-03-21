@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import MovieList from './MovieList.js';
-import StartSite from './StartSite.js'
-
 
 function MovieSearch() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -37,7 +35,7 @@ function MovieSearch() {
       {movies.length > 0 ? (
         <MovieList movies={movies} />
       ) : (
-        <StartSite />
+        <p>No movies found.</p>
       )}
     </div>
   );
