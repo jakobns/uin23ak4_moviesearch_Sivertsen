@@ -17,11 +17,12 @@ form {
   width: 99%;
   padding: 10px;
   justify-content: center;
+  flex-wrap: wrap;
+  flex: content;
 }
 form input {
   padding: 1rem;
-  margin-left: 350px;
-  width: 1000px;
+  width: 50rem;
   margin-top: 8px;
   margin-right: 16px;
   border: none;
@@ -67,4 +68,11 @@ article {
 article img {
   width: 300px;
   height: 400px;
+}
+
+.FrontPage h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
 }/*# sourceMappingURL=Main.css.map */
