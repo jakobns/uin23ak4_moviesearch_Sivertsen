@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MovieList from './MovieList';
+import Moviecards from './Moviecards';
 
 function StartSite() {
   const [movies, setMovies] = useState([]);
@@ -13,7 +13,7 @@ function StartSite() {
   return (
     <section>
       {movies.length > 0 ? (
-        <MovieList movies={movies} />
+        <Moviecards movies={movies} />
       ) : (
         <p>No movies found.</p>
       )}

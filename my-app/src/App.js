@@ -1,6 +1,6 @@
 import './StyleFolder/Main.css';
 import React from 'react';
-import MovieSearch from './components/MovieSearch';
+import Searchresults from './components/Searchresults';
 import StartSite from './components/StartSite';
 
 
@@ -10,7 +10,7 @@ function App() {
       <header>
       <h1>Movie Search</h1>
       </header>
-      <MovieSearch />
+      <Searchresults />
       <section className='FrontPage'>
         <h1>James Bond filmer</h1>
       <StartSite />

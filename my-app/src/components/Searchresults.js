@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MovieList from './MovieList.js';
+import Moviecards from './Moviecards.js';
 
-function MovieSearch() {
+function Searchresults() {
   const [searchTerm, setSearchTerm] = useState('');
   const [movies, setMovies] = useState([]);
   
@@ -37,7 +37,7 @@ function MovieSearch() {
         <button type="submit">Search</button>
       </form>
       {movies.length > 0 ? (
-        <MovieList movies={movies} />
+        <Moviecards movies={movies} />
       ) : (
         <p>No movies found.</p>
       )}
@@ -45,4 +45,4 @@ function MovieSearch() {
   );
 }
 
-export default MovieSearch;
+export default Searchresults;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MovieList(props) {
+function Moviecards(props) {
   const { movies } = props;
 
   return (
@@ -19,4 +19,4 @@ function MovieList(props) {
   );
 }
 
-export default MovieList;
+export default Moviecards;
